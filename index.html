@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seonghun | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="container top-inner">
+      <a class="brand" href="#top">Seonghun</a>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="badge">AI Engineer × Game/Simulation</p>
+          <h1 class="title">권성훈 (Seonghun Kwon)</h1>
+          <p class="subtitle">
+            게임/시뮬레이션 감성을 살린 AI 프로젝트를 만드는 것을 목표로 합니다.
+            (RL · CV · Data · Systems)
+          </p>
+          <div class="actions">
+            <a class="btn" href="#projects">프로젝트 보기</a>
+            <a class="btn ghost" href="https://github.com/dkfc9727" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <!-- 프로필 사진을 쓰려면 images/profile.jpg 추가 후 경로만 맞추세요 -->
+        <div class="avatar-wrap">
+          <img class="avatar" src="images/profile.jpg" alt="profile" onerror="this.style.display='none'" />
+          <div class="avatar-fallback">
+            <span>사진</span><span>추가</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <div class="card">
+          <p>
+            부산대학교 정보컴퓨터공학부 재학 중이며, AI 엔지니어 진로를 준비하고 있습니다.
+            게임/시뮬레이션 요소를 접목한 프로젝트로 “보이는 성과”와 “기술 깊이”를 함께 보여주는 포트폴리오를 만들고 있습니다.
+          </p>
+          <ul class="meta">
+            <li>📍 Korea</li>
+            <li>🎓 Computer Engineering</li>
+            <li>💡 Interest: RL / CV / Simulation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>ML / DL</h3>
+            <p>PyTorch, scikit-learn, training/eval, metrics</p>
+          </div>
+          <div class="card">
+            <h3>Game/Sim</h3>
+            <p>Reinforcement Learning, environment design, visualization</p>
+          </div>
+          <div class="card">
+            <h3>Engineering</h3>
+            <p>Python, Git/GitHub, Linux, data pipelines</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+
+        <div class="grid projects">
+          <!-- 프로젝트 카드 1 -->
+          <article class="card project">
+            <div class="project-head">
+              <h3>Game RL Agent (예시)</h3>
+              <p class="small">DQN / Pygame / Reward Shaping</p>
+            </div>
+            <p class="desc">
+              미니 게임 환경을 직접 만들고, 에이전트가 스스로 학습하는 과정을 시각화했습니다.
+            </p>
+            <div class="links">
+              <a class="chip" href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="chip" href="#" target="_blank" rel="noreferrer">Demo</a>
+              <a class="chip" href="#" target="_blank" rel="noreferrer">Report</a>
+            </div>
+          </article>
+
+          <!-- 프로젝트 카드 2 -->
+          <article class="card project">
+            <div class="project-head">
+              <h3>Player Behavior Analytics (예시)</h3>
+              <p class="small">Clustering / Heatmap / Skill Prediction</p>
+            </div>
+            <p class="desc">
+              플레이 로그를 수집해 행동 패턴을 분석하고, 실력 분류 모델을 만들었습니다.
+            </p>
+            <div class="links">
+              <a class="chip" href="#" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <!-- 필요하면 카드 복사해서 늘리세요 -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>연락은 아래로 주세요.</p>
+          <ul class="contact">
+            <li><strong>Email</strong> : <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></li>
+            <li><strong>GitHub</strong> : <a href="https://github.com/dkfc9727" target="_blank" rel="noreferrer">github.com/dkfc9727</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="y"></span> Seonghun. Built with GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
